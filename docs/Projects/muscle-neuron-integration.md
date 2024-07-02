@@ -4,9 +4,9 @@ Muscle-Neuron-Channel Integration
 High-level Overview
 -------------------
 
-The fidelity of OpenWorm to its biological counterpart, *C. elegans*, depends on the realism of its constituent parts, such as computationally-modelled cells. The internal dynamics of these cells are largely controlled by ion channels, so a biophysically-informed ion channel model will, in-turn, support a realistic model of the entire organism.
+The fidelity of OpenWorm to its biological counterpart, _C. elegans_, depends on the realism of its constituent parts, such as computationally-modelled cells. The internal dynamics of these cells are largely controlled by ion channels, so a biophysically-informed ion channel model will, in-turn, support a realistic model of the entire organism.
 
-Broadly speaking, the team for this project will develop a workflow and tools to simulate *C. elegans* cell dynamics using simulated ion channel (*intracellular*) dynamics.
+Broadly speaking, the team for this project will develop a workflow and tools to simulate _C. elegans_ cell dynamics using simulated ion channel (*intracellular*) dynamics.
 
 [![image](http://docs.google.com/drawings/d/1WzHYpgHZBDvbAxIb-KDDw0OatI8KWXQ8h_BeMVaQ2wM/pub?w=1238&amp;h=869)](https://docs.google.com/drawings/d/1WzHYpgHZBDvbAxIb-KDDw0OatI8KWXQ8h_BeMVaQ2wM/edit)
 
@@ -63,7 +63,7 @@ ChannelWorm
 
 [The ChannelWorm subproject](https://github.com/VahidGh/ChannelWorm/) is, at a high level, a pipeline to convert ion channel *data* found in scientific papers into ion channel *models*. This pipeline involves:
 
-1.  [Identification](https://github.com/VahidGh/ChannelWorm/issues/10/) of papers with ion channel data.
+1.  [Identification](https://github.com/VahidGh/ChannelWorm/issues/) of papers with ion channel data.
 2.  Extraction of data from these papers, including figures, active parameters and tabular data.
 3.  [Digitization](http://channelworm.readthedocs.org/en/latest/digitization/) of figures, and more generally, converting this information into machine-readable form.
 
@@ -129,11 +129,11 @@ Issues for OWMeta are tracked [on Github](https://github.com/openworm/OWMeta/iss
 Muscle Model
 ------------
 
-The [muscle model subproject](https://github.com/openworm/muscle_model/) is concerned with modelling and simulation at the *cellular* level, specifically attempting to simulate the electrical dynamics of a *C. elegans* body wall muscle cell.
+The [muscle model subproject](https://github.com/openworm/muscle_model/) is concerned with modelling and simulation at the *cellular* level, specifically attempting to simulate the electrical dynamics of a _C. elegans_ body wall muscle cell.
 
 This depends on what happens in [ChannelWorm](#channelworm), since ion channel dynamics are integral to our simulation of membrane dynamics.
 
-Because the muscle cell is driven both by an electrical model and a mechanical model, it is a focus of integration between different algorithms. Previously we have created a separate [repository for the muscle model](https://github.com/openworm/muscle_model) that is an adaptation of the work by [Boyle & Cohen, 2008](http://www.comp.leeds.ac.uk/netta/CV/papers/BC08b.pdf). We have an [approximately working version](http://www.opensourcebrain.org/projects/muscle_model/wiki) implemented in NEURON and are porting this to be fully NeuroML2 compliant.
+Because the muscle cell is driven both by an electrical model and a mechanical model, it is a focus of integration between different algorithms. Previously we have created a separate [repository for the muscle model](https://github.com/openworm/muscle_model) that is an adaptation of the work by [Boyle & Cohen, 2008](https://www.sciencedirect.com/science/article/abs/pii/S0303264708001408). We have an [approximately working version](http://www.opensourcebrain.org/projects/muscle_model/wiki) implemented in NEURON and are porting this to be fully NeuroML2 compliant. 
 
 The electrical side of the model is currently the focus of the OpenWorm Muscle / Neuron Team. You can connect with the team [on real time chat](https://app.slack.com/client/T02EPNETZ/C40BEV91S) (if you haven't signed up as a contributor to get your Slack invitation, you can [do that here](https://goo.gl/3ncZWn)).
 
@@ -176,7 +176,7 @@ Issues for the muscle model are tracked [on Github.](https://github.com/openworm
 c302
 ----
 
-The [c302 subproject](https://github.com/openworm/CElegansNeuroML/tree/master/CElegans/pythonScripts/c302/) is an effort to simulate the connectome of *C. elegans*, which includes its 302 neurons. The neural dynamics will start out with biologically-unrealistic integrate and fire cells, and be replaced with incrementally more realistic dynamics, as tests pass. Like the musclemodel, dynamics of neurons depend on ion channel dynamics within the cells, and thus depend on the channelworm subproject.
+The [c302 subproject](https://github.com/openworm/CElegansNeuroML/tree/master/CElegans/pythonScripts/c302/) is an effort to simulate the connectome of _C. elegans_, which includes its 302 neurons. The neural dynamics will start out with biologically-unrealistic integrate and fire cells, and be replaced with incrementally more realistic dynamics, as tests pass. Like the musclemodel, dynamics of neurons depend on ion channel dynamics within the cells, and thus depend on the channelworm subproject.
 
 ### Previous accomplishments
 

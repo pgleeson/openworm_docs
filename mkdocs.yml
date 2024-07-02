@@ -13,6 +13,7 @@ nav:
       - Projects Overview : projects.md
       - Sibernetic : Projects/sibernetic.md
       - c302 : Projects/c302.md
+      - Worm Browser : Projects/browser.md
       - DevoWorm : Projects/DevoWorm.md
       - Movement : Projects/worm-movement.md
       - Geppetto : Projects/geppetto.md
@@ -20,6 +21,7 @@ nav:
       - Representation : Projects/datarep.md
       - Community Outreach : Projects/community-proj.md
       - Muscle / Neuron /  Channel : Projects/muscle-neuron-integration.md
+      - C. elegans Robots : Projects/c-elegans-robot.md
   - Community:
       - Community Overview : community.md
       - GitHub : Community/github.md
